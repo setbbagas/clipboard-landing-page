@@ -9,6 +9,7 @@
     /* color general */
     --clr-primary: hsl(171, 66%, 44%);
     --clr-secondary: hsl(233, 100%, 69%);
+    --clr-neutral-100: hsl(201, 30%, 96%);
     --clr-neutral-200: hsl(201, 11%, 66%);
     --clr-neutral-400: hsl(210, 10%, 33%);
 }
@@ -84,6 +85,7 @@ a {
 /* remove list style */
 ul {
     list-style: none;
+    padding: 0;
 }
 
 /* utilities */
@@ -228,4 +230,41 @@ body {
 
 .testimonial__img {
     margin-inline: auto;
+}
+
+/* footer */
+.footer {
+    margin-top: 8rem;
+    background-color: var(--clr-neutral-100);
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.content {
+    gap: 3rem;
+}
+
+.footer__logo {
+    margin-inline: auto;
+
+    width: 3.5rem;
+}
+
+.footer__menu,
+.menu__list {
+    gap: 1.875rem;
+}
+
+.list__item {
+    color: var(--clr-neutral-400);
+}
+
+.footer__sm {
+    gap: 2rem;
+    margin-inline: auto;
+}
+
+.sm__icon {
+    font-size: 1.75rem;
+    color: var(--clr-neutral-400);
 }
