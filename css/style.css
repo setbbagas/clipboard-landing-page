@@ -32,9 +32,13 @@ body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* tweaking line height */
 body {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* font smooting */
@@ -159,13 +163,11 @@ body {
     font-size: 2rem;
     font-weight: var(--fw-semibold);
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.125rem;
     color: var(--clr-neutral-400);
 }
 
 .hero__subtitle {
-    font-size: 1rem;
-
     color: var(--clr-neutral-200);
     margin-bottom: 3rem;
 }
@@ -173,4 +175,57 @@ body {
 .cta {
     gap: 1.5rem;
     flex-direction: column;
+}
+
+/* main */
+.main {
+    text-align: center;
+}
+.section__title {
+    font-size: 1.75rem;
+    font-weight: var(--fw-semibold);
+    line-height: 1.2;
+    color: var(--clr-neutral-400);
+    margin-bottom: 1.125rem;
+}
+
+.section__subtitle {
+    color: var(--clr-neutral-200);
+    margin-bottom: 4rem;
+}
+
+.feature__img {
+    width: calc(100% - 0.625rem);
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+.feature__content {
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.feature__title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-neutral-400);
+    margin-bottom: 0.5rem;
+}
+
+.feature__subtitle {
+    color: var(--clr-neutral-200);
+}
+
+.feature__icon {
+    margin-inline: auto;
+    margin-block: 3rem 2rem;
+}
+
+.testimonial {
+    gap: 3rem;
+    margin-block: 6rem;
+}
+
+.testimonial__img {
+    margin-inline: auto;
 }
